@@ -1,2 +1,2 @@
 # MyRepo
-portfolio thngs
+Welcome to my Repo!
