@@ -1,0 +1,59 @@
+body {
+    background-color: grey;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 30px;
+}
+
+/* red button */
+
+
+#red {
+    background-color: red;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+@media (max-width: 599px) {
+    #red {
+        display: none;
+    }
+}
+
+
+
+#blue {
+    background-color: blue;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+      /* at minimum it will show past 600px  while AFTER 999 it will*/
+@media (min-width:599px) and (max-width: 999px) {
+    #blue {
+        display: none;
+    }
+}
+
+#green {
+    background-color: green;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+@media (max-width: 999px) {
+    #green {
+        display: none;
+    }
+}
