@@ -1,66 +1,100 @@
 body {
-    background-color: grey;
+    background-color: black;
 }
 
 
 
-.limo-nav-left li, a {
-    list-style: none;
-    text-decoration: none;
+/* Header Nav Area */
+
+.limo-nav-left li,
+a,
+.limo-nav-left li a:visited {
     color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+
 }
 
-.limo-nav-left {
+.limo-nav-left,
+li {
     display: flex;
-    gap: 10px;
-    background-color: black
+    flex-direction: row;
+    justify-content: space-between;
+margin: 0px;
+   
 
 }
 
+.limo-search a {
+    display: flex;
+  
+    padding-top: 16px;
+    font-size: 18px;
+
+
+}
 
 .limo-nav-left ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
+    justify-content: space-evenly;
+    width:585px;  
     padding: 0px;
-    
+    padding-right: 70px;
+    margin-top: 15px;
+
 
 }
 
-.limo-nav-main{
+
+.limo-nav-main {
     border-bottom: 3px solid white;
+    display: flex;
+
 }
 
 
-.limo-name h1 {
+.limo-logo h1 {
     color: white;
     display: flex;
     font-size: 20px;
     align-items: center;
     justify-content: flex-start;
-    margin: 15px 0px 0px 0px;
+    margin: 0px 80px 0px 0px;
+
+}
+.see-rates {
+    display: flex;
+    justify-items: end;
+    align-items: flex-end;
+    margin-bottom: 15px;
 }
 
-.limo-nav-main img {
+.limo-logo img {
     height: 50px;
     width: 80px;
     margin: 0px;
     padding: 4px 6px 0px 0px;
-    margin-left: 22px;
-}
-
-.limo-nav-main {
+    margin-right: 30px;
+    margin-left: 60px;
     
 }
 
+
+
+
+/* Carousel Section */
+
 .limo-box {
-  background: url(aranprime-2_Ddnr0NYSA-unsplash.jpg) center no-repeat;
-  background-size: cover;
-  display: flex;
-  min-height: 60%;
-  justify-content: flex-end;
-  align-items: center;
+    background: url(aranprime-2_Ddnr0NYSA-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 70%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 60px 0px 60px;
+    padding: 40px;
+    
 }
 
 .limo-splash {
@@ -74,9 +108,8 @@ body {
     height: 300px;
 }
 
-.limo-go {
+.limo-go {}
 
-}
 
 .limo-take {
     display: flex;
