@@ -77,11 +77,13 @@ li {
     text-align: center;
     /* background-color: transparent; */
     border: none;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .zip-btn {
     padding-right: 10px;
     border: none;
+    border-radius: 0px 5px 5px 0px;
 
 }
 
@@ -104,11 +106,13 @@ li {
     background: url(aranprime-2_Ddnr0NYSA-unsplash.jpg) center no-repeat;
     background-size: cover;
     display: flex;
-    min-height: 70%;
+    min-height: 60%;
+    height: 350px;
     justify-content: flex-end;
     align-items: center;
     margin: 15px 60px 0px 60px;
     padding: 40px;
+    border-radius: 5px;
 
 }
 
@@ -121,4 +125,87 @@ li {
     font-size: 20px;
     width: 380px;
     height: 300px;
+    border-radius: 5px;
+}
+
+/* Rates section */
+
+/* Airport Boxes */
+
+.limo-rates-box h3 {
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    margin-bottom: 0px;
+    opacity: 1;
+
+}
+
+.limo-rates-box h4 {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    margin-top: 15px;
+    opacity: 1;
+
+}
+
+.limo-rates-box p {
+    color: red;
+    text-align: center;
+    /* padding: 0px 15px 0px 10px; */
+}
+
+.limo-rates-box {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: aliceblue;
+    margin: 20px 60px 0px 60px;
+    gap: 20px;
+    height: 300px;
+
+}
+
+.newark-box:hover,
+.laguardia-box:hover,
+.jfk-box:hover,
+.personal-driver-box:hover {
+    opacity: 1;
+}
+
+.newark-box {
+    border-radius: 5px;
+    background-image: url(marco-lopez-qK6HAkB91Yc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    
+}
+
+
+
+
+.laguardia-box {
+    border-radius: 5px;
+    background-image: url(artur-tumasjan-KZSNMN4VxR8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.jfk-box {
+    border-radius: 5px;
+    background-image: url(actionvance-6_741dg4VwY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.personal-driver-box {
+    border-radius: 5px;
+    background-image: url(dan-gold-kARZuSYMfrA-unsplash.jpg);
+    background-size: cover;
+    background-position: left;
+    opacity: 0.8;
 }
