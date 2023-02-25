@@ -2,6 +2,10 @@ body {
     background-color: rgba(0, 0, 0, 0.924);
 }
 
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 
 /* Header Nav Area */
@@ -12,7 +16,8 @@ a,
     color: white;
     text-decoration: none;
     list-style: none;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 550;
 
 }
 
@@ -34,21 +39,24 @@ li {
 
 }
 
+
+
 .limo-nav-left ul {
     display: flex;
     justify-content: space-evenly;
     width: 600px;
     padding: 0px;
     padding-right: 90px;
-    margin-top: 15px;
+    margin-top: 25px;
 
 
 }
 
 
 .limo-nav-main {
-    border-bottom: 3px solid white;
+    border: 3px solid white;
     display: flex;
+    padding: 15px;
 
 }
 
@@ -56,27 +64,31 @@ li {
 .limo-logo h1 {
     color: white;
     display: flex;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 400;
     align-items: center;
     justify-content: flex-start;
-    margin: 0px 80px 0px 0px;
+    margin: 8px 80px 0px 20px;
+    border: 3px solid white;
+    padding: 10px;
 
 }
 
 .see-rates {
     display: flex;
     justify-items: end;
-    margin-top: 10px;
     height: 35px;
     text-align: center;
+    margin-top: 20px;
 
 }
 
 .zip-code {
     text-align: center;
-
     border: none;
     border-radius: 5px 0px 0px 5px;
+    display: flex;
+
 }
 
 .zip-btn {
@@ -135,13 +147,21 @@ li {
 
 .plane-icon {
     height: 30px;
-    padding: 5px 9px 0px 6px;
+    padding: 5px 9px 5px 6px;
+    border: 2px solid rgba(128, 128, 128, 0.553);
+    border-radius: 50%;
 
+
+}
+
+.plane-icon-lag {
+    height: 30px;
+    padding: 5px 9px 5px 6px;
 }
 
 .car-icon {
     height: 30px;
-    padding: 5px 10px 0px 6px;
+    padding: 5px 9px 5px 6px;
 }
 
 /* Airport Boxes */
@@ -149,9 +169,9 @@ li {
 .limo-rates-box h3 {
     text-align: center;
     color: black;
-    font-size: 35px;
+    font-size: 30px;
     opacity: 1;
-    background-color: rgba(251, 249, 249, 0.644);
+    /* background-color: rgba(251, 249, 249, 0.644); */
     margin-bottom: 25px;
     border-radius: 2px;
     box-shadow: 0 0 3px;
@@ -214,6 +234,7 @@ li {
     background-image: url(artur-tumasjan-KZSNMN4VxR8-unsplash.jpg);
     background-size: cover;
     background-position: center;
+
 
 }
 
