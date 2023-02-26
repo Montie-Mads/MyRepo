@@ -1,0 +1,113 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+
+body {
+    background-color: #16161a;
+    /* margin: 0 auto; */
+}
+
+/* Header Area */
+
+.limo-header {
+    /* border: 1px solid red; */
+    display: flex;
+    max-width: 100%;
+    margin: 16px 0px 0px 60px;
+
+}
+
+.limo-logo {
+    color: #fffffe;
+    display: flex;
+    /* width: 400px; */
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+.limo-header h1 {
+    font-weight: 290;
+}
+
+.limo-header-inner {
+    border: 1px solid #fffffe;
+    /* padding: 5px 0px 5px 0px; */
+    font-size: 16px;
+    margin: 5px;
+    padding: 0px 10px 0px 10px;
+}
+
+/* Header Nav */
+
+.limo-nav {
+    /* border: 1px solid red; */
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    padding-left: 60px;
+
+
+}
+
+.limo-nav a {
+    text-decoration: none;
+    color: #fffffe;
+    padding-right: 0px;
+    font-size: 18px;
+    font-weight: 540;
+
+}
+
+.limo-nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    padding: 0px;
+
+}
+
+.see-rates {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border: none;
+    padding-left: 50px;
+
+
+}
+
+.zip-code {
+    text-align: center;
+    padding: 6px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: #16161a;
+    border: 1px solid rgba(255, 255, 255, 0.821);
+    color: #fffffe;
+
+}
+
+.zip-btn {
+    background-color: #16161a;
+    border: 1px solid rgba(255, 255, 255, 0.821);
+    padding: 6.5px;
+    border-radius: 0px 4px 4px 0px;
+    color: #fffffe;
+}
+
+/* .fa-bars {
+    color: #fffffe;
+    height: 40px;
+} */
+.burger-div {
+    display: flex;
+    padding-left: 60px;
+}
+
+.fa-solid {
+    font-size: 40px;
+    color: #fffffe;
+}
