@@ -387,3 +387,28 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.about-driver {
+    height: 80%;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.limo-about-driver-img {
+    margin-top: 30px;
+
+}
+
+.limo-about-us {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.limo-about-us p {
+    font-weight: 300;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
