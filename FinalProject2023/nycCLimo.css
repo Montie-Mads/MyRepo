@@ -29,11 +29,11 @@ body {
 
 
 .limo-header h1 {
-    font-weight: 290;
+    font-weight: 300;
 }
 
 .limo-header-inner {
-    border: 1px solid #fffffe;
+    border: 3px solid #fffffe;
     /* padding: 5px 0px 5px 0px; */
     font-size: 16px;
     margin: 5px;
@@ -126,17 +126,24 @@ body {
 
 [class^="number-slide"],
 [class*=" number-slide"] {
-  background: grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 500;
-  height: 500px;
-  max-height: 100vh;
-  padding-bottom: 90px;
-  
- 
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    height: 450px;
+    max-height: 100vh;
+    padding-bottom: 90px;
+    margin-top: 50px;
+
+
+}
+
+.limo-carousel {
+    margin-top: 50px;
+    margin-left: 150px;
+    max-width: 80%;
 }
 
 /* .number-slide1 {
@@ -148,7 +155,7 @@ body {
   );
 } */
 
-.number-slide2 {
+/* .number-slide2 {
   background: rgb(255, 75, 64);
   background: linear-gradient(
     128deg,
@@ -195,66 +202,188 @@ body {
     rgba(64, 76, 255, 1) 0%,
     rgba(174, 63, 255, 1) 100%
   );
-}
+} */
 
 .navigation-wrapper {
-  position: relative;
+    position: relative;
 }
 
 .dots {
-  display: flex;
-  padding: 10px 0;
-  justify-content: center;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
 }
 
 .dot {
-  border: none;
-  width: 10px;
-  height: 10px;
-  background: #4fc4cf;
-  border-radius: 50%;
-  margin: 0 5px;
-  padding: 5px;
-  cursor: pointer;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #4fc4cf;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .dot:focus {
-  outline: none;
+    outline: none;
 }
 
 .dot--active {
-  background: #000;
+    background: #000;
 }
 
 .arrow {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  fill: #fff;
-  cursor: pointer;
-  
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #fff;
+    cursor: pointer;
+
 }
 
 .arrow--left {
-  left: 5px;
-  fill: #fff;
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+    left: 5px;
+    fill: #fff;
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
 }
 
 .arrow--right {
-  left: auto;
-  right: 5px;
-  color: #4fc4cf;
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+    left: auto;
+    right: 5px;
+    color: #4fc4cf;
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .arrow--disabled.arrow--left {
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
 }
 
 .arrow--disabled.arrow--right {
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+/* Limo Rate Cards */
+
+.limo-rates {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #fffffe;
+    text-align: center;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+    height: 290px;
+    /* gap: 40px; */
+    background-color: #16161a;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.limo-rates h3 {
+    font-size: 25px;
+    /* background-color: #4fc4cf; */
+    display: grid;
+}
+
+.limo-rates p {
+    font-size: 19px;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+}
+
+/* .rates-btn {
+    background-color: #4fc4cf;
+
+} */
+
+.click-rates-btn {
+    background-color: #4fc4cf;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+
+
+
+}
+
+.click-rates-btn a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.click-rates-btn-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.newark-card {
+    border: 1px solid #fffffe;
+    text-align: center;
+    background-color: #242629;
+    border-radius: 5px;
+    margin: 5px;
+    transition: transform .9s;
+}
+
+.newark-card:hover,
+.laguardia-card:hover,
+.jfk-card:hover,
+.personal-driver-card:hover {
+    transform: scale(1.1);
+
+}
+
+.laguardia-card {
+    border: 1px solid #fffffe;
+    text-align: center;
+    background-color: #242629;
+    border-radius: 5px;
+    margin: 5px;
+
+    transition: transform .9s;
+}
+
+.jfk-card {
+    border: 1px solid #fffffe;
+    text-align: center;
+    background-color: #242629;
+    border-radius: 5px;
+    margin: 5px;
+
+    transition: transform .9s;
+}
+
+.personal-driver-card {
+    border: 1px solid #fffffe;
+    text-align: center;
+    background-color: #242629;
+    border-radius: 5px;
+    margin: 5px;
+
+    transition: transform .9s;
+}
+
+/* Limo About Section */
+
+.limo-about {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #242629;
+}
+
+.limo-about-inner {
+    color: #fffffe;
+    display: flex;
+    justify-content: center;
 }
