@@ -52,7 +52,7 @@ function navigation(slider) {
       }
       dots = createDiv("dots")
       slider.track.details.slides.forEach((_e, idx) => {
-        var dot = createDiv("dot")
+        let dot = createDiv("dot")
         dot.addEventListener("click", () => slider.moveToIdx(idx))
         dots.appendChild(dot)
       })
@@ -60,7 +60,7 @@ function navigation(slider) {
     }
   
     function updateClasses() {
-      var slide = slider.track.details.rel
+      let slide = slider.track.details.rel
       slide === 0
         ? arrowLeft.classList.add("arrow--disabled")
         : arrowLeft.classList.remove("arrow--disabled")
@@ -92,5 +92,5 @@ function navigation(slider) {
     })
   }
   
-  let slider = new KeenSlider("#my-keen-slider", {}, [navigation])
+  let slider = new KeenSlider("#limo-keen-slider", {}, [navigation])
   
