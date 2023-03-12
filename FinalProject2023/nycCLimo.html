@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="https://kit.fontawesome.com/0a6c88d431.css" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <link rel="stylesheet" href="normalise.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
     <link rel="stylesheet" href="nycCLimo.css">
@@ -24,16 +27,16 @@
     <header class="limo-header">
         <div class="limo-header-inner">
             <h1 class="limo-logo">
-                NYC Connections Limo
+                <a href="#"> NYC Connections Limo</a>
             </h1>
         </div>
 
         <nav class="limo-nav">
-            <ul>
-                <li class="nav-text"> <a href="#">Areas</a></li>
-                <li class="nav-text"> <a href="#">About</a></li>
-                <li class="nav-text"> <a href="#">How It Works</a></li>
-                <li class="nav-text"> <a href="#">Connect With Us</a></li>
+            <ul class="limo-nav-inner">
+                <li class="limo-nav-links"> <a href="#">Areas</a></li>
+                <li class="limo-nav-links"> <a href="#">About</a></li>
+                <li class="limo-nav-links"> <a href="#">How It Works</a></li>
+                <li class="limo-nav-links"> <a href="#">Connect With Us</a></li>
 
                 <form action="#" class="see-rates">
                     <input class=zip-code type="text" placeholder="Enter Zipcode"> <button type="submit"
@@ -42,17 +45,15 @@
                 </form>
 
                 <div class="burger-div">
-                    <i class="fa-solid"></i>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
                 </div>
             </ul>
         </nav>
     </header>
+
+
     <!-- Header logo end -->
 
-    <!-- <div class="limo-carousel">
-        <div class="caro-limo"><img src="imagesFolder/why-kei-8e2gal_GIE8-unsplash.jpg" alt="image of driver"></div>
-
-    </div> -->
 
     <section class="limo-carousel">
         <div id="limo-keen-slider" class="keen-slider">
@@ -72,7 +73,7 @@
 
     <section class="limo-rates">
 
-        <div class="newark-card">
+        <div class="newark-card limo-cards">
             <h3>Newark Airport</h3>
             <p>
                 We provide pick-up and drop off
@@ -84,7 +85,7 @@
             </div>
         </div>
 
-        <div class="laguardia-card">
+        <div class="laguardia-card limo-cards">
             <h3>Laguardia Airport</h3>
             <p>
                 We provide pick-up and drop off
@@ -94,7 +95,7 @@
                 <span class="click-rates-btn"><a href="#">Click Here To Find Our Rates!</a> </span>
             </div>
         </div>
-        <div class="jfk-card">
+        <div class="jfk-card limo-cards">
             <h3>JFK Airport</h3>
             <p>
                 We provide pick-up and drop off to JFK one of the busiest and
@@ -104,7 +105,8 @@
                 <span class="click-rates-btn"><a href="#">Click Here To Find Our Rates!</a> </span>
             </div>
         </div>
-        <div class="personal-driver-card">
+
+        <div class="personal-driver-card limo-cards">
             <h3>Personal Drivers</h3>
             <p>
                 Need personal driver services?
@@ -112,7 +114,7 @@
             </p>
             <div class="click-rates-btn-container">
                 <span class="click-rates-btn"><a href="#">Click Here To Find Our Rates!</a> </span>
-                <!-- <p class="rates-btn">Click here to Find our rates!</p> -->
+
             </div>
         </div>
 
@@ -127,12 +129,16 @@
             </div>
 
             <div class="limo-about-us">
-                <p>Always travel in style and comfort with our first-class
-                    service. At NYC Connections Limo, you'll find our service that is reliant, comfortable and prompt.
-                    Whether you require Town Cars, SUV's
-                    BMW's, Limos, or Minivans,
-                    NYC Limo can cater to businesses or individuals in need of safe, proper and professional service.
-                </p>
+                <div class="limo-about-us-inner">
+                    <p>Always travel in style and comfort with our first-class
+                        service. At NYC Connections Limo, you'll find our service that is reliant, comfortable and
+                        prompt.
+                        Whether you require Town Cars, SUV's
+                        BMW's, Limos, or Minivans,
+                        NYC Limo can cater to businesses or individuals in need of safe, proper and professional
+                        service.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -144,33 +150,37 @@
 
                 <p>Connect With Us!</p>
 
-                <a href="#"><i class="fa-brands fa-facebook socials-icons"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook socials-icons-connect"></i></a>
 
-                <a href="#"><i class="fa-brands fa-instagram socials-icons"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram socials-icons-connect"></i></a>
 
-                <a href="#"><i class="fa-brands fa-twitter socials-icons"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter socials-icons-connect"></i></a>
 
-                <a href="#"><i class="fa-brands fa-linkedin-in socials-icons"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in socials-icons-connect"></i></a>
 
 
-
-                <div class="conect-with-us-box">
-
-                    <div><a href="#"><i class="fa-solid fa-message socials-icons"></i> Send Us A Message</a></div>
-
-                    <div><a href="#"><i class="fa-solid fa-phone socials-icons"></i> Give Us A Call</a></div>
-
-                    <div><a href="#"><i class="fa-solid fa-comments socials-icons"></i> Questions? Live Chat With Us!</a></div>
-                      
-                </div>
 
             </div>
+            
+            <div class="conect-with-us-box">
+
+                <div><a href="#"><i class="fa-solid fa-message socials-icons"></i> Send Us A Message</a></div>
+
+                <div><a href="#"><i class="fa-solid fa-phone socials-icons"></i> Give Us A Call</a></div>
+
+                <div><a href="#"><i class="fa-solid fa-comments socials-icons"></i> Questions? Live Chat With
+                        Us!</a></div>
+
+            </div>
+
         </div>
 
 
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0a6c88d431.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
     <script src="./script.js"></script>

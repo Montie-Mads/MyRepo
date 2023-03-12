@@ -1,13 +1,14 @@
 * {
-    font-family: 'Source Sans Pro', sans-serif;
-
-
+    box-sizing: border-box;
 }
 
 body {
     background-color: #16161a;
-    /* margin: 0 auto; */
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
+
+
 
 /* Header Area */
 
@@ -15,16 +16,21 @@ body {
     /* border: 1px solid red; */
     display: flex;
     max-width: 100%;
-    margin: 16px 0px 0px 60px;
+    margin: 16px 0px 0px 90px;
 
 }
 
 .limo-logo {
-    color: #fffffe;
     display: flex;
-    /* width: 400px; */
     justify-content: center;
     margin-top: 15px;
+
+
+}
+
+.limo-logo a {
+    color: #fffffe;
+    text-decoration: none;
 }
 
 
@@ -34,10 +40,10 @@ body {
 
 .limo-header-inner {
     border: 3px solid #fffffe;
-    /* padding: 5px 0px 5px 0px; */
     font-size: 16px;
     margin: 5px;
     padding: 0px 10px 0px 10px;
+
 }
 
 /* Header Nav */
@@ -61,6 +67,17 @@ body {
 
 }
 
+.limo-nav a,
+.limo-nav a:visited {
+    color: #fffffe;
+    text-decoration: none;
+}
+
+.limo-nav a:hover {
+    color: #4fc4cf;
+}
+
+
 .limo-nav ul {
     display: flex;
     list-style: none;
@@ -70,15 +87,22 @@ body {
 
 }
 
+
+
+input:focus-visible {
+    outline: 1px solid #4fc4cf;
+    border-radius: 3px;
+}
+
 .see-rates {
     display: flex;
     align-items: center;
     margin-left: 10px;
     border: none;
     padding-left: 50px;
-
-
 }
+
+
 
 .zip-code {
     text-align: center;
@@ -98,18 +122,75 @@ body {
     color: #fffffe;
 }
 
-/* .fa-bars {
-    color: #fffffe;
-    height: 40px;
-} */
+.zip-btn:hover {
+    color: #4fc4cf;
+}
+
 .burger-div {
     display: flex;
-    padding-left: 60px;
+    padding-left: 50px;
 }
 
 .fa-solid {
-    font-size: 40px;
+    font-size: 35px;
     color: #fffffe;
+}
+
+@media screen and (max-width:1200px) {
+
+    .limo-header {
+        background: #16161a;
+    }
+
+    .burger-div {
+        display: block;
+        margin-right: 30px;
+        color: #fffffe;
+    }
+
+    .limo-nav {
+        right: 0;
+        position: absolute;
+        width: 0;
+        height: 0;
+        flex-direction: column;
+        justify-content: normal;
+        overflow: hidden;
+        top: 70px;
+
+
+    }
+
+    .see-rates {
+        display: block;
+        display: flex;
+    }
+
+    .zip-btn {
+        display: none;
+    }
+
+    .limo-nav,
+    .limo-nav-inner {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    /* .limo-nav-links {
+        text-align: center;
+        margin: 0;
+
+    } */
+
+    .limo-nav-links a:link,
+    .limo-nav-links a:visited {
+        color: #fffffe;
+    }
+
+    .nav-active {
+        width: 50%;
+        height: 100px;
+    }
 }
 
 /* Carousel Area */
@@ -266,6 +347,12 @@ body {
     background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
 }
 
+@media screen and (max-width: 1200px) {
+    .limo-carousel {
+        display: block;
+    }
+}
+
 
 /* Limo Rate Cards */
 
@@ -324,6 +411,7 @@ body {
     justify-content: center;
     align-items: flex-end;
 
+
 }
 
 .newark-card {
@@ -333,6 +421,7 @@ body {
     border-radius: 5px;
     margin: 5px;
     transition: transform .9s;
+    padding-top: 10px;
 }
 
 .newark-card:hover,
@@ -343,6 +432,8 @@ body {
 
 }
 
+
+
 .laguardia-card {
     border: 1px solid #fffffe;
     text-align: center;
@@ -351,6 +442,7 @@ body {
     margin: 5px;
 
     transition: transform .9s;
+    padding-top: 10px;
 }
 
 .jfk-card {
@@ -361,6 +453,7 @@ body {
     margin: 5px;
 
     transition: transform .9s;
+    padding-top: 10px;
 }
 
 .personal-driver-card {
@@ -371,6 +464,29 @@ body {
     margin: 5px;
 
     transition: transform .9s;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 799px) {
+
+
+    .limo-rates {
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 10px;
+        width: 90%;
+    }
+
+    .limo-rates {
+
+        overflow: hidden;
+        height: 100%;
+        padding: 40px;
+    }
+
+    .limo-cards {
+        padding: 20px;
+    }
 }
 
 /* Limo About Section */
@@ -399,6 +515,8 @@ body {
 
 }
 
+
+
 .limo-about-us {
     display: flex;
     justify-content: center;
@@ -414,19 +532,69 @@ body {
 }
 
 
+
+
+@media screen and (max-width: 1200px) {
+    .limo-about-inner {
+        flex-direction: column;
+    }
+
+    .limo-about-driver-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .about-driver {
+        width: 60%;
+
+
+    }
+
+    .limo-about-us {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .limo-about-us-inner {
+        /* border: 1px solid red; */
+        font-size: 30px;
+        margin: 0px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .limo-about-us-inner p {
+        margin: 0px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .limo-about {
+        margin-top: 100px;
+    }
+
+}
+
+
 .limo-socials p {
     color: #fffffe;
     font-size: 20px;
     margin: 16px;
 }
 
-.socials-icons {
+.socials-icons,
+.socials-icons-connect {
     color: #fffffe;
     font-size: 30px;
     margin-top: 10px;
     vertical-align: sub;
     padding-right: 10px;
 }
+
+
 
 .limo-socials-icon-box {
     padding-top: 30px;
@@ -452,4 +620,50 @@ body {
     color: #fffffe;
     font-size: 20px;
 
+}
+
+@media screen and (max-width: 1200px) {
+
+    .limo-socials-icon-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .socials-icons-connect {
+        font-size: 45px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .socials-icons {
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    .conect-with-us-box a {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 799px) {
+
+    .limo-socials-icon-box {
+        display: flex;
+        border: 1px solid red;
+        width: 100%;
+    }
+
+    .connect-with-us-box {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid red;
+        width: 100%;
+    }
+
+    .socials-icons {
+       
+    }
 }
