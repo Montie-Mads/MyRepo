@@ -95,7 +95,7 @@ function navigation(slider) {
 let slider = new KeenSlider("#limo-keen-slider", {}, [navigation])
 
 
-const burger = document.querySelector('.burger i');
+const burger = document.querySelector('.burger');
 const nav = document.querySelector('.limo-nav');
 
 function toggleNav() {

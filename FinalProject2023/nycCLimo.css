@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -46,6 +47,35 @@ body {
 
 }
 
+
+/* New Nav */
+
+.nav-link {
+    color: #fffffe;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #4fc4cf;
+}
+
+.btn-outline-success {
+    border: solid 1px #fffffe;
+    color: #fffffe;
+}
+
+.btn-outline-success:hover {
+    color: #4fc4cf;
+}
+
+.navbar-toggler {
+    color: #fffffe;
+}
+
+
+
+
+
 /* Header Nav */
 
 .limo-nav {
@@ -54,7 +84,7 @@ body {
     /* width: 100%; */
     justify-content: center;
     padding-left: 60px;
-
+    background-color: #16161a;
 
 }
 
@@ -67,15 +97,27 @@ body {
 
 }
 
-.limo-nav a,
-.limo-nav a:visited {
+.navbar a,
+.navbar a:visited {
     color: #fffffe;
     text-decoration: none;
 }
 
-.limo-nav a:hover {
+.navbar a:hover {
     color: #4fc4cf;
 }
+
+.d-flex {
+    margin-left: 90px;
+}
+
+.btn-outline-success:hover {
+    background-color: #4fc4cf;
+    color: #000;
+    border: #4fc4cf;
+}
+
+
 
 
 .limo-nav ul {
@@ -89,10 +131,10 @@ body {
 
 
 
-input:focus-visible {
+/* input:focus-visible {
     outline: 1px solid #4fc4cf;
     border-radius: 3px;
-}
+} */
 
 .see-rates {
     display: flex;
@@ -126,14 +168,17 @@ input:focus-visible {
     color: #4fc4cf;
 }
 
-.burger-div {
-    display: flex;
+.burger {
+    /* display: none; */
     padding-left: 50px;
+    cursor: pointer;
+
 }
 
 .fa-solid {
     font-size: 35px;
     color: #fffffe;
+
 }
 
 @media screen and (max-width:1200px) {
@@ -142,11 +187,16 @@ input:focus-visible {
         background: #16161a;
     }
 
-    .burger-div {
+
+    .burger {
         display: block;
         margin-right: 30px;
         color: #fffffe;
+        border: 1px solid red;
     }
+
+    .fa-solid {}
+
 
     .limo-nav {
         right: 0;
@@ -157,6 +207,7 @@ input:focus-visible {
         justify-content: normal;
         overflow: hidden;
         top: 70px;
+
 
 
     }
@@ -192,6 +243,19 @@ input:focus-visible {
         height: 100px;
     }
 }
+
+@media screen and (max-width: 799px) {
+    .limo-header {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
+        width: 85%;
+        margin: 10px 0px 0px 65px;
+
+    }
+
+}
+
 
 /* Carousel Area */
 
@@ -335,12 +399,13 @@ input:focus-visible {
 .arrow--right {
     left: auto;
     right: 5px;
-    color: #4fc4cf;
+    color: #fff;
     background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .arrow--disabled.arrow--left {
     background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+
 }
 
 .arrow--disabled.arrow--right {
@@ -352,6 +417,13 @@ input:focus-visible {
         display: block;
     }
 }
+
+@media screen and (max-width: 799px) {
+    .limo-carousel {
+        display: none;
+    }
+}
+
 
 
 /* Limo Rate Cards */
@@ -380,7 +452,7 @@ input:focus-visible {
 .limo-rates p {
     font-size: 19px;
     padding-top: 20px;
-    /* padding-bottom: 20px; */
+
 }
 
 /* .rates-btn {
@@ -393,10 +465,9 @@ input:focus-visible {
     padding: 10px;
     border-radius: 10px;
     display: flex;
-
-
-
 }
+
+
 
 .click-rates-btn a {
     color: #000;
@@ -478,10 +549,10 @@ input:focus-visible {
     }
 
     .limo-rates {
-
+        margin: 0px 10px 0px 30px;
         overflow: hidden;
         height: 100%;
-        padding: 40px;
+
     }
 
     .limo-cards {
@@ -574,10 +645,26 @@ input:focus-visible {
 @media screen and (max-width: 799px) {
     .limo-about {
         margin-top: 100px;
+        padding-top: 50px;
+    }
+
+    .about-driver {
+        width: 100%;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .limo-about-us-inner p {
+        display: flex;
+        font-size: 25px;
     }
 
 }
 
+.limo-socials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .limo-socials p {
     color: #fffffe;
@@ -592,6 +679,13 @@ input:focus-visible {
     margin-top: 10px;
     vertical-align: sub;
     padding-right: 10px;
+
+}
+
+.socials-icons-connect:hover,
+.connect-with-us-box a:hover {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    color: #4fc4cf;
 }
 
 
@@ -606,16 +700,17 @@ input:focus-visible {
 }
 
 
-.conect-with-us-box {
+.connect-with-us-box {
     display: flex;
     gap: 30px;
     margin-left: 40px;
-    justify-content: space-between;
+    margin-top: 30px;
+
 
 }
 
 
-.conect-with-us-box a {
+.connect-with-us-box a {
     text-decoration: none;
     color: #fffffe;
     font-size: 20px;
@@ -627,6 +722,7 @@ input:focus-visible {
     .limo-socials-icon-box {
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
 
     .socials-icons-connect {
@@ -640,7 +736,7 @@ input:focus-visible {
         margin-left: 10px;
     }
 
-    .conect-with-us-box a {
+    .connect-with-us-box a {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -650,20 +746,31 @@ input:focus-visible {
 
 @media screen and (max-width: 799px) {
 
+    .limo-socials {
+        padding-bottom: 50px;
+    }
+
     .limo-socials-icon-box {
         display: flex;
-        border: 1px solid red;
-        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 17px;
+        width: 90%;
+
+        justify-content: center;
+    }
+
+    .socials-icons-connect {
+        padding-right: 0px;
     }
 
     .connect-with-us-box {
         display: flex;
-        flex-wrap: wrap;
-        border: 1px solid red;
-        width: 100%;
+
+
+        width: 90%;
+        margin-right: 60px;
+        padding-left: 50px;
     }
 
-    .socials-icons {
-       
-    }
+
 }
