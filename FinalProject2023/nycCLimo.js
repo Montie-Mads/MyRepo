@@ -95,15 +95,15 @@ function navigation(slider) {
 let slider = new KeenSlider("#limo-keen-slider", {}, [navigation])
 
 
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.limo-nav');
+// const burger = document.querySelector('.burger');
+// const nav = document.querySelector('.limo-nav');
 
-function toggleNav() {
-    burger.classList.toggle('fa-bars');
-    burger.classList.toggle('fa-times');
-    nav.classList.toggle('nav-active');
-}
+// function toggleNav() {
+//     burger.classList.toggle('fa-bars');
+//     burger.classList.toggle('fa-times');
+//     nav.classList.toggle('nav-active');
+// }
 
-burger.addEventListener('click', function() {
-    toggleNav();
-});
+// burger.addEventListener('click', function() {
+//     toggleNav();
+// });

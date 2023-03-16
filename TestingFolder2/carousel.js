@@ -24,7 +24,6 @@ carouselButtons.forEach(button => {
             currentIndex = 0;
         }
 
-        // for ( let i = 0; i < 3; i++)
         carouselImages.style.transform = `translateX(-${currentIndex * 100 / totalImages}%)`;
 
     });

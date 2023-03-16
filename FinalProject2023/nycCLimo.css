@@ -265,7 +265,7 @@ body {
 
 .caro-limo img {
     max-height: 500px;
-    width: 1000px;
+    width: 1200px;
     margin-left: 200px;
 } */
 
@@ -435,13 +435,13 @@ body {
     color: #fffffe;
     text-align: center;
     margin-top: 50px;
-    /* border: 1px solid red; */
     height: 290px;
-    /* gap: 40px; */
     background-color: #16161a;
     margin-left: 40px;
     margin-right: 40px;
 }
+
+
 
 .limo-rates h3 {
     font-size: 25px;
@@ -465,6 +465,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     display: flex;
+    align-items: center;
 }
 
 
@@ -485,6 +486,30 @@ body {
 
 }
 
+.limo-cards {
+    border: 1px solid #fffffe;
+    text-align: center;
+    background-color: #24262963;
+    border-radius: 5px;
+    margin: 5px;
+    transition: transform .9s;
+    padding-top: 10px;
+
+}
+
+.limo-cards:hover {
+    transform: scale(1.1);
+}
+
+/* 
+.newark-card:hover,
+.laguardia-card:hover,
+.jfk-card:hover,
+.personal-driver-card:hover {
+    transform: scale(1.1);
+
+}
+
 .newark-card {
     border: 1px solid #fffffe;
     text-align: center;
@@ -495,13 +520,7 @@ body {
     padding-top: 10px;
 }
 
-.newark-card:hover,
-.laguardia-card:hover,
-.jfk-card:hover,
-.personal-driver-card:hover {
-    transform: scale(1.1);
 
-}
 
 
 
@@ -536,7 +555,7 @@ body {
 
     transition: transform .9s;
     padding-top: 10px;
-}
+} */
 
 @media screen and (max-width: 799px) {
 
