@@ -418,6 +418,11 @@ body {
     }
 }
 
+@media screen and (max-width: 992px){
+    
+}
+
+
 @media screen and (max-width: 799px) {
     .limo-carousel {
         display: none;
@@ -856,7 +861,7 @@ body {
         margin-bottom: 20px;
         margin-left: 17px;
         width: 90%;
-        background-color: red;
+        
         justify-content: center;
     }
 
