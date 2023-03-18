@@ -14,7 +14,7 @@ body {
 /* Header Area */
 
 .limo-header {
-    
+    /* border: 1px solid red; */
     display: flex;
     max-width: 100%;
     margin: 16px 0px 0px 90px;
@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    
+
 
 }
 
@@ -34,10 +34,6 @@ body {
     text-decoration: none;
 }
 
-.limo-logo a:hover {
-    color: #4fc4cf;
-    transition: .15s ease-in-out;
-}
 
 .limo-header h1 {
     font-weight: 300;
@@ -50,8 +46,6 @@ body {
     padding: 0px 10px 0px 10px;
 
 }
-
-
 
 
 /* New Nav */
@@ -84,30 +78,29 @@ body {
 
 /* Header Nav */
 
-/* .limo-nav {
-    border: 1px solid red;
+.limo-nav {
+    /* border: 1px solid red; */
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     justify-content: center;
     padding-left: 60px;
     background-color: #16161a;
-    
-} */
 
-/* .limo-nav a {
+}
+
+.limo-nav a {
     text-decoration: none;
     color: #fffffe;
     padding-right: 0px;
     font-size: 18px;
     font-weight: 540;
 
-} */
+}
 
 .navbar a,
 .navbar a:visited {
     color: #fffffe;
     text-decoration: none;
-    
 }
 
 .navbar a:hover {
@@ -138,7 +131,10 @@ body {
 
 
 
-
+/* input:focus-visible {
+    outline: 1px solid #4fc4cf;
+    border-radius: 3px;
+} */
 
 .see-rates {
     display: flex;
@@ -172,7 +168,12 @@ body {
     color: #4fc4cf;
 }
 
+/* .burger {
+    display: none;
+    padding-left: 50px;
+    cursor: pointer;
 
+} */
 
 .fa-solid {
     font-size: 35px;
@@ -187,16 +188,18 @@ body {
     }
 
 
-    /* .burger {
+    .burger {
         display: block;
         margin-right: 30px;
         color: #fffffe;
         border: 1px solid red;
-    } */
+    }
+
+    */
+    /* .fa-solid {}
 
 
-
-    /* .limo-nav {
+    .limo-nav {
         right: 0;
         position: absolute;
         width: 0;
@@ -208,7 +211,7 @@ body {
 
 
 
-    } */
+    }
 
     .see-rates {
         display: block;
@@ -282,6 +285,18 @@ body {
 
 }
 
+
+/* Carousel Area */
+
+/* .limo-carousel {
+    margin-top: 50px;
+}
+
+.caro-limo img {
+    max-height: 500px;
+    width: 1200px;
+    margin-left: 200px;
+} */
 
 [class^="number-slide"],
 [class*=" number-slide"] {
@@ -436,7 +451,10 @@ body {
 
 }
 
+/* .rates-btn {
+    background-color: #4fc4cf;
 
+} */
 
 .click-rates-btn {
     background-color: #4fc4cf;
@@ -538,13 +556,12 @@ body {
     padding-top: 10px;
 } */
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1200px) {
     .limo-rates {
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         display: grid;
         gap: 10px;
         width: 90%;
-        
 
     }
 
@@ -654,7 +671,7 @@ body {
 
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
     .limo-about-inner {
         flex-direction: column;
     }
@@ -794,7 +811,7 @@ body {
 
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
 
     .limo-socials-icon-box {
         display: flex;
