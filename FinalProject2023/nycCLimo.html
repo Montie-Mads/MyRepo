@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYC Connections Limo Service</title>
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://kit.fontawesome.com/0a6c88d431.css" crossorigin="anonymous">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <link rel="stylesheet" href="normalise.css">
+   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
+    
     <link rel="stylesheet" href="nycCLimo.css">
 
 
@@ -31,24 +32,6 @@
             </h1>
         </div>
 
-        <!-- <nav class="limo-nav ">
-            <ul class="limo-nav-inner">
-                <li class="limo-nav-links"> <a href="#">Areas</a></li>
-                <li class="limo-nav-links"> <a href="#">About</a></li>
-                <li class="limo-nav-links"> <a href="#">How It Works</a></li>
-                <li class="limo-nav-links"> <a href="#">Connect With Us</a></li>
-
-                <form action="#" class="see-rates">
-                    <input class=zip-code type="text" placeholder="Enter Zipcode"> <button type="submit"
-                        class="zip-btn">See
-                        Rates</button>
-                </form>
-
-                <div class="burger">
-                    <a href="#"><i class="fa-solid fa-bars"></i></a>
-                </div>
-            </ul>
-        </nav> -->
 
 
         <nav class="navbar navbar-expand-lg bg-subtle">
@@ -58,13 +41,9 @@
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <div class="collapse navbar-collapse limo-links" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        
-                        
-                        <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li> -->
 
 
                         <li class="nav-item">
@@ -80,28 +59,14 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Connect With Us</a>
+                            <a class="nav-link" href="#">Contact Us</a>
                         </li>
 
 
-
-                        <li class="nav-item dropdown">
-                            <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Links
-                    </a> -->
-                            <!-- <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li> -->
-
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Enter zip-code" aria-label="Search">
+                    <form class="d-flex limoForm" role="search">
+                        <input class="form-control me-2 form-inner" type="search" placeholder="Enter Zip Code" aria-label="Search"
+                            id="zipCode">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
@@ -117,20 +82,20 @@
 
     <section class="limo-carousel">
         <div id="limo-keen-slider" class="keen-slider">
-            <div class="keen-slider__slide number-slide1"><img class="carousel-limo-img-one" src="imagesFolder/why-kei-8e2gal_GIE8-unsplash.jpg"
-                    alt="driver in car"></div>
+            <div class="keen-slider__slide number-slide1"><img class="carousel-limo-img-one"
+                    src="imagesFolder/why-kei-8e2gal_GIE8-unsplash.jpg" alt="driver in car"></div>
 
-            <div class="keen-slider__slide number-slide2"><img class="carousel-limo-img-two" src="imagesFolder/ilse-mSKb5FdvXNg-unsplash.jpg"
-                    alt=""></div>
+            <div class="keen-slider__slide number-slide2"><img class="carousel-limo-img-two"
+                    src="imagesFolder/ilse-mSKb5FdvXNg-unsplash.jpg" alt=""></div>
 
-            <div class="keen-slider__slide number-slide3"><img class="carousel-limo-img-three" src="imagesFolder/anna-vi-QUi84upBhoc-unsplash.jpg"
-                    alt="">
+            <div class="keen-slider__slide number-slide3"><img class="carousel-limo-img-three"
+                    src="imagesFolder/anna-vi-QUi84upBhoc-unsplash.jpg" alt="">
 
             </div>
 
             <div class="keen-slider__slide number-slide4"><img class="carousel-limo-img-four"
                     src="imagesFolder/kajetan-sumila-swhi80M_Y1g-unsplash.jpg" alt="">
-                </div>
+            </div>
 
         </div>
     </section>
@@ -246,7 +211,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0a6c88d431.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
-    <script src="./script.js"></script>
+
     <script src="nycCLimo.js"></script>
 </body>
 
