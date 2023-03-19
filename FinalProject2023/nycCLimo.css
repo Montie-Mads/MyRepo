@@ -155,9 +155,8 @@ body {
     }
 
     .form-inner {
-        background-color: red;
-    width: 140px;
-    margin-right: 20px;
+        width: 140px;
+        margin-right: 20px;
     }
 
     .container-fluid {
@@ -165,7 +164,7 @@ body {
         margin-left: 80px;
         padding-bottom: 10px;
         width: 100%;
-        
+
     }
 
 }
@@ -226,41 +225,48 @@ body {
     background: #000;
 }
 
-.arrow {
-    width: 30px;
-    height: 30px;
+
+.arrow { 
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    fill: #fff;
     cursor: pointer;
+    border: #4fc4cf solid 1px;
+    border-radius: 50%;
+    padding: 15px;
 
 }
 
 .arrow--left {
     left: 5px;
-    fill: #fff;
-    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
-    background-color: #4fc4cf60;
+    background-image: url(imagesFolder/arrow-left-solid.svg);
+    background-repeat: no-repeat;
+    background-color: #4fc4cfb5;
+    
 }
 
 .arrow--right {
     left: auto;
     right: 5px;
-    color: #fff;
-    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
-    background-color: #4fc4cf60;
+    background-image: url(imagesFolder/arrow-right-solid.svg);
+    background-repeat: no-repeat;
+    background-color: #4fc4cfb5;
+    
 }
 
 .arrow--disabled.arrow--left {
-    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
-
+    background-image: url(imagesFolder/arrow-left-solid.svg);
+    
 }
 
 .arrow--disabled.arrow--right {
-    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url(imagesFolder/arrow-right-solid.svg);
+
 }
+
 
 @media screen and (max-width: 1200px) {
     .limo-carousel {

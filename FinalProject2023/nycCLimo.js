@@ -13,12 +13,14 @@ function navigation(slider) {
   function createDiv(className) {
     let div = document.createElement("div")
     let classNames = className.split(" ")
-    // console.log('whoop')
-    // console.log(className)
-    // console.log(classNames)
     classNames.forEach((name) => div.classList.add(name))
+    console.log('whoop')
+    console.log(className)
+    console.log(classNames)
     return div
   }
+ 
+  //The className.split
 
   function arrowMarkup(remove) {
     if (remove) {
@@ -99,86 +101,41 @@ let slider = new KeenSlider("#limo-keen-slider", {}, [navigation])
 
 
 
-// let zipcodes = [1234, 5678];
-
-// function checkZipCode() {
-
-//   let i, validCode = false;
-
-//   for (i = 0; i < zipcodes.length; i++) {
-
-//     if (zipcode[i] == document.getElementById('zipCode').value) {
-//       validCode = true;
-//     }
-
-
-//   }
-
-// }
-
-
-// let zipcodes = [1234, 5678];
-
-// //prevent site from refeshing
-// document.querySelector('#zipCode').addEventListener('submit,', function (e) {
-//   e.preventDefault();
-
-//   //create a loop to loop through the zipcodes in the array to check and see if valid on submit
-
-//   for (i = 0; i < zipcodes.length; i++) {
-
-//     //grab the zipcode input to run it through the loop
-
-//     if (zipcodes[i] == document.getElementById('search').innerHTML) {
-
-//     }
-//     // prompt user to enter valid zipcode if incorrect
-//     else { {}
-//       message.push("Please Input Valid Zipcode");
-//     }
-//   }
-
-
-// });
-
-
-
 
 
 
 let zipcodes = [12378, 67890];
 
-// //create a function to validateZipCodes
+// //create a function to validateZipCodes and prevent page from refreshing on submit 
+
 function validateZipCodes(e) {
-  // console.log(this)
   e.preventDefault();
 
   // //target the zipcode search box
   let inputZipcode = document.querySelector('#zipCode').value;
-  console.log(inputZipcode)
+
+  //Number(Zipcode) makes it so that whatever is input into the #zipCode area is a number, otherwise it returns as a NaN
+
   inputZipcode = Number(inputZipcode)
-  console.log(inputZipcode)
+
+
   if (zipcodes.indexOf(inputZipcode) < 0) {
+
     //an invalid zip code was entered 
 
     document.querySelector('#zipCode').setCustomValidity("Services limited to New York City")
     document.querySelector('#zipCode').reportValidity("")
-    console.log("here")
+
+
   } else {
+
     //if zipcode is valid
-    this.submit()
     //submit the form
+    this.submit()
+
   }
-
-  // //create a loop to run through the zipcode arrays
-
-  // //validate zipcodes and if incorrect push a message to user to enter valid zipcode 
-
-
-
-
-  // }
 
 
 }
+//Target the limo form and add event listener on submit
 document.querySelector(".limoForm").addEventListener('submit', validateZipCodes)
