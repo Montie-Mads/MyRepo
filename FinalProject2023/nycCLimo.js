@@ -7,35 +7,44 @@ function navigation(slider) {
     arrowMarkup(remove)
   }
 
+  //this chunk of code removes the markup from the arrow, dots, and wrapper
+
   function removeElement(elment) {
     elment.parentNode.removeChild(elment)
   }
+
   function createDiv(className) {
     let div = document.createElement("div")
     let classNames = className.split(" ")
     classNames.forEach((name) => div.classList.add(name))
-    console.log('whoop')
-    console.log(className)
-    console.log(classNames)
     return div
+    //this code block is creating a new div using a loop, splits the className parameter, saves the array [dots, arrows, navigation wrapper] and saves it into classNames (plural).
   }
- 
-  //The className.split
+
+
+
+
 
   function arrowMarkup(remove) {
+
     if (remove) {
+
       removeElement(arrowLeft)
       removeElement(arrowRight)
       return
+
     }
     arrowLeft = createDiv("arrow arrow--left")
     arrowLeft.addEventListener("click", () => slider.prev())
     arrowRight = createDiv("arrow arrow--right")
     arrowRight.addEventListener("click", () => slider.next())
-
     wrapper.appendChild(arrowLeft)
     wrapper.appendChild(arrowRight)
+  
   }
+
+  //creating a div for the arrows prev and next 
+  //adding an event listener for both on the left and right arrow on click for previous and next if the removeElement from above is not true . 
 
   function wrapperMarkup(remove) {
     if (remove) {
@@ -50,19 +59,28 @@ function navigation(slider) {
     wrapper.appendChild(slider.container)
   }
 
+  //creating a div called navigation-wrapper, 
+
+
   function dotMarkup(remove) {
     if (remove) {
       removeElement(dots)
       return
+     
     }
     dots = createDiv("dots")
     slider.track.details.slides.forEach((_e, idx) => {
       let dot = createDiv("dot")
       dot.addEventListener("click", () => slider.moveToIdx(idx))
       dots.appendChild(dot)
+      
     })
     wrapper.appendChild(dots)
+  
   }
+
+  //removing the element dots on inactive dots 
+  //creating a div for the dots (dots = createDiv("dots")) that are clicked on, marking them as active
 
   function updateClasses() {
     let slide = slider.track.details.rel
@@ -74,10 +92,17 @@ function navigation(slider) {
       : arrowRight.classList.remove("arrow--disabled")
     Array.from(dots.children).forEach(function (dot, idx) {
       idx === slide
+      
         ? dot.classList.add("dot--active")
         : dot.classList.remove("dot--active")
     })
   }
+  
+  //updating the classes on the active/inactive arrows
+  //adding the class "arrow--disabled" on inactive arrows as the sliders are moved to the next slide
+  
+  //adding the dot--active class to the active dots
+
 
   slider.on("created", () => {
     markup()
