@@ -226,7 +226,7 @@ body {
 }
 
 
-.arrow { 
+.arrow {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -245,7 +245,7 @@ body {
     background-image: url(imagesFolder/arrow-left-solid.svg);
     background-repeat: no-repeat;
     background-color: #4fc4cfb5;
-    
+
 }
 
 .arrow--right {
@@ -254,12 +254,12 @@ body {
     background-image: url(imagesFolder/arrow-right-solid.svg);
     background-repeat: no-repeat;
     background-color: #4fc4cfb5;
-    
+
 }
 
 .arrow--disabled.arrow--left {
     background-image: url(imagesFolder/arrow-left-solid.svg);
-    
+
 }
 
 .arrow--disabled.arrow--right {
@@ -341,6 +341,11 @@ body {
     align-items: center;
 
 }
+
+.click-rates-btn a:hover {
+    color: #fffffe;
+}
+
 
 .click-rates-btn a {
     color: #000;
@@ -573,6 +578,13 @@ body {
     margin-top: 10px;
     vertical-align: sub;
     padding-right: 10px;
+
+}
+
+.socials-icons,
+.socials-icons-connect:visited {
+    color: #fffffe;
+    text-decoration: none;
 
 }
 
