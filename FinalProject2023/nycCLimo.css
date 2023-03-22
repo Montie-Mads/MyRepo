@@ -110,7 +110,7 @@ body {
 }
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
     .limo-header {
         display: flex;
         flex-direction: row;
@@ -268,7 +268,7 @@ body {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .limo-carousel {
         display: block;
 
@@ -380,7 +380,7 @@ body {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .limo-rates {
         grid-template-columns: 1fr 1fr;
         display: grid;
@@ -489,7 +489,7 @@ body {
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .limo-about-inner {
         flex-direction: column;
     }
@@ -623,7 +623,7 @@ body {
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
     .limo-socials {
         flex-wrap: wrap;
