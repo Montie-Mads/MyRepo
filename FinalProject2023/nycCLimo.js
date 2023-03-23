@@ -40,7 +40,7 @@ function navigation(slider) {
     arrowRight.addEventListener("click", () => slider.next())
     wrapper.appendChild(arrowLeft)
     wrapper.appendChild(arrowRight)
-  
+
   }
 
   //creating a div for the arrows prev and next 
@@ -66,17 +66,17 @@ function navigation(slider) {
     if (remove) {
       removeElement(dots)
       return
-     
+
     }
     dots = createDiv("dots")
     slider.track.details.slides.forEach((_e, idx) => {
       let dot = createDiv("dot")
       dot.addEventListener("click", () => slider.moveToIdx(idx))
       dots.appendChild(dot)
-      
+
     })
     wrapper.appendChild(dots)
-  
+
   }
 
   //removing the element dots on inactive dots 
@@ -92,15 +92,15 @@ function navigation(slider) {
       : arrowRight.classList.remove("arrow--disabled")
     Array.from(dots.children).forEach(function (dot, idx) {
       idx === slide
-      
+
         ? dot.classList.add("dot--active")
         : dot.classList.remove("dot--active")
     })
   }
-  
+
   //updating the classes on the active/inactive arrows
   //adding the class "arrow--disabled" on inactive arrows as the sliders are moved to the next slide
-  
+
   //adding the dot--active class to the active dots
 
 
@@ -129,7 +129,7 @@ let slider = new KeenSlider("#limo-keen-slider", {}, [navigation])
 
 
 
-let zipcodes = [12378, 67890];
+let zipcodes = [12378, 67890, 10004, 10021];
 
 // //create a function to validateZipCodes and prevent page from refreshing on submit 
 
@@ -145,7 +145,7 @@ function validateZipCodes(e) {
 
 
   if (zipcodes.indexOf(inputZipcode) < 0) {
-
+    console.log("here")
     //an invalid zip code was entered 
 
     document.querySelector('#zipCode').setCustomValidity("Services limited to New York City")

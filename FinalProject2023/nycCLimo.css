@@ -65,6 +65,7 @@ body {
 .btn-outline-success {
     border: solid 1px #fffffe;
     color: #fffffe;
+
 }
 
 .btn-outline-success:hover {
@@ -335,7 +336,7 @@ body {
 
 .click-rates-btn {
     background-color: #4fc4cf;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     display: flex;
     align-items: center;
