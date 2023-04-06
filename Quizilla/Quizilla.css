@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #700f2b;
+    margin: auto 60px
+}
+
+.white-body {
+    background-color: white;
+    min-height: 800px;
+    width: 941px;
+    margin-left: 15%;
+}
+
+.qLogo img {
+    height: 150px;
+
+}
+
+.qLeftMenu {
+    border: solid 3px #ac1741;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.qLeftMenu h2 {
+    margin: 15px;
+    margin-left: 0px;
+    margin-bottom: 6px;
+    color: #44747c;
+}
+
+.qLeftMenu li {
+    padding: 1px;
+    font-weight: bold;
+}
+
+.qLeftMenuLinks {
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+.qLeftMenuLinks a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
