@@ -9,15 +9,84 @@ body {
 
 .white-body {
     background-color: white;
-    min-height: 800px;
-    width: 941px;
-    margin-left: 15%;
+    min-height: 100%x;
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 .qLogo img {
     height: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.qWelcomeBox {
+    max-width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    text-align: center;
+    margin-left: 25%;
+    border: solid 3px #ac1741;
+    width: 900px;
+    border-radius: 8px;
+    padding-left: 18px;
+}
+
+
+.qLeftMenu {
+    position: sticky;
+}
+
+.qWelcomeBoxInner {
+    max-width: 100%;
+
+    color: black;
+
+    /* background-color: #77B1BA; */
+    /* width: 70%; */
+    /* display: flex;
+    flex-wrap: wrap; */
 
 }
+
+.qStats {
+    border-bottom: solid 1px #44747c;
+}
+
+.qWelcomeBoxInner p {
+    font-weight: bold;
+    width: 860px;
+    text-align: center;
+    
+    /* margin-right: 50px; */
+}
+
+.qWelcomeBoxInner h2 {
+    /* background-color:#44747c ;  */
+    color: #2d494e;
+    text-align: center;
+
+}
+
+.qWelcomeBoxInner a {
+    text-decoration: none;
+    color: #44747c;
+}
+
+
+/* Quizilla Grid Main */
+
+.qRecentGrid {
+    display: grid;
+    margin-left: 20%;
+    border: solid #ac1741 2px;
+    margin-top: 50px;
+}
+
+
+/* Left Menu */
 
 .qLeftMenu {
     border: solid 3px #ac1741;
@@ -50,7 +119,7 @@ body {
     color: black;
 }
 
-.qLeftMenuLinks a{
+.qLeftMenuLinks a {
     text-decoration: none;
     list-style: none;
     color: black;
