@@ -17,6 +17,7 @@ body {
     height: auto;
     display: block;
     width: 100%;
+    color: #fffffe;
 }
 
 a,
@@ -25,9 +26,17 @@ a:visited {
 }
 
 
+ a:hover {
+    border-bottom: dotted 3px #fffffe;
+	transition: all 150ms ease-in-out;	
+	
+}
+
 .M-Logo img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
+    border: 3px dotted #fffffe;
+    border-radius: 100px;
 }
 
 
@@ -43,9 +52,9 @@ a:visited {
     
     padding-top: 40px;
     margin-left: 200px;
-
-
 }
+
+
 
 
 .M-Nav-About {
