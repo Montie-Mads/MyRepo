@@ -1,0 +1,67 @@
+/* 
+background color: #232946
+font color: #fffffe
+*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 20px;
+
+}
+
+body {
+    background-color: #232946;
+    font-size: 25px;
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+a,
+a:visited {
+    color: #fffffe;
+}
+
+
+.M-Logo img {
+    width: 150px;
+    height: 150px;
+}
+
+
+.M-Nav-Content {
+    display: flex;
+    width: 100%;
+
+
+}
+
+
+.M-Nav-About-Box {
+    
+    padding-top: 40px;
+    margin-left: 200px;
+
+
+}
+
+
+.M-Nav-About {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    /* background-color: red; */
+
+}
+
+.M-Nav-About a,
+li {
+
+    list-style: none;
+    text-decoration: none;
+    color: #fffffe;
+
+
+}
