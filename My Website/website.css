@@ -9,7 +9,10 @@ font color: #fffffe
     box-sizing: border-box;
     margin: 20px;
 
+
 }
+
+/* Header Section */
 
 body {
     background-color: #232946;
@@ -26,10 +29,10 @@ a:visited {
 }
 
 
- a:hover {
+a:hover {
     border-bottom: dotted 3px #fffffe;
-	transition: all 150ms ease-in-out;	
-	
+    transition: all 150ms ease-in-out;
+
 }
 
 .M-Logo img {
@@ -49,12 +52,9 @@ a:visited {
 
 
 .M-Nav-About-Box {
-    
     padding-top: 40px;
-    margin-left: 200px;
+
 }
-
-
 
 
 .M-Nav-About {
@@ -62,6 +62,7 @@ a:visited {
     gap: 20px;
     width: 100%;
     /* background-color: red; */
+
 
 }
 
@@ -71,6 +72,28 @@ li {
     list-style: none;
     text-decoration: none;
     color: #fffffe;
+
+
+}
+
+.M-Hero {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    width: 100%;
+   
+}
+
+.M-Tagline-Links a {
+    list-style: none;
+    text-decoration: none;
+    color: #fffffe;
+    
+}
+
+.M-Tagline {
+    text-align: center;
+   padding-top: 50px;
 
 
 }
