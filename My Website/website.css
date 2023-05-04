@@ -29,6 +29,21 @@ h1 {
     justify-content: center;
 }
 
+
+a,
+li,
+ul {
+    list-style: none;
+    text-decoration: none;
+    color: #fffffe;
+}
+
+
+p {
+    text-align: center;
+}
+
+
 a,
 a:visited {
     color: #fffffe;
@@ -72,7 +87,7 @@ a:hover {
 
 }
 
-.M-Nav-About a,
+/* .M-Nav-About a,
 li {
 
     list-style: none;
@@ -80,7 +95,7 @@ li {
     color: #fffffe;
 
 
-}
+} */
 
 .M-Hero {
     display: flex;
@@ -90,12 +105,12 @@ li {
     margin-bottom: 15%;
 }
 
-.M-Tagline-Links a {
+/* .M-Tagline-Links a {
     list-style: none;
     text-decoration: none;
     color: #fffffe;
 
-}
+} */
 
 .M-Tagline {
     text-align: center;
@@ -127,3 +142,5 @@ li {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+
