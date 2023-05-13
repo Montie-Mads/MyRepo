@@ -7,8 +7,7 @@ font color: #fffffe
 
 * {
     box-sizing: border-box;
-    margin: 20px;
-
+    margin: 18px;
 
 }
 
@@ -67,8 +66,6 @@ a:hover {
 .M-Nav-Content {
     display: flex;
     width: 100%;
-
-
 }
 
 
@@ -82,27 +79,22 @@ a:hover {
     display: flex;
     gap: 20px;
     width: 100%;
-    /* background-color: red; */
+    padding: 0px;
+    margin-right: 60px;
 
 
 }
 
-/* .M-Nav-About a,
-li {
-
-    list-style: none;
-    text-decoration: none;
-    color: #fffffe;
 
 
-} */
+
 
 .M-Hero {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
     width: 100%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 /* .M-Tagline-Links a {
@@ -128,13 +120,14 @@ li {
 
 .M-About-P {
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 .M-Projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 .M-Project-Box {
@@ -142,5 +135,3 @@ li {
     justify-content: center;
     flex-wrap: wrap;
 }
-
-
