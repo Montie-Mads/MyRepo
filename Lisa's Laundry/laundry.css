@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    height: auto;
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+    color: #272343;
+
+}
+
+.container-fixed {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.laundry-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+    
+}
+
+.laundry-header{
+    margin: 0;
+    width: 100%;
+}
+
+.laundry-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 1rem;
+    width: 100%;
+    
+}
+
+.laundry-navigation .laundry-nav{
+
+    display: flex;
+    justify-content: space-around; b
+    padding: 0;
+
+}
+
+.navLink {
+    list-style: none;
+    margin: 0 0 0 30px;
+
+}
+
+.navLink a {
+    color: #272343;
+    text-decoration: none;
+    font-size: 1.2em;
+}
